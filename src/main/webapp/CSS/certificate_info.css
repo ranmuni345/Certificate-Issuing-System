@@ -1,0 +1,35 @@
+form
+		{
+			border-radius: 10px;
+			background-color: #f2f2f2;
+			padding: 20px;
+		}
+
+		h1
+		{
+			text-align: center;
+		}
+		.coloumn 
+		{
+            width: 1000px;
+		}
+		.coloumn div
+		{
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-left: 30px;
+		}
+		.ad div
+		{
+			margin-top: 100px;
+			background-color: white;
+		}
+		img
+		{
+            float: right;
+            width: 250px;
+            height: 200px;
+            margin-top: 20px;
+            margin-right: 150px;
+		}

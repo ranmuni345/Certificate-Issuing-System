@@ -1,0 +1,117 @@
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(homepage_image.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 80vh;
+	color: #fff !important;
+}
+
+.header
+{
+	margin: 20px auto;
+	text-align: center;
+}
+
+h1
+{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+h1:after
+{
+	content: '';
+	background: white;
+	display: block;
+	width: 150px;
+	height: 3px;
+	margin: 10px auto;
+}
+
+ .list ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ .list li 
+{
+  float: left;
+}
+
+ .list li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .list li a:hover {
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+}
+
+.active
+{
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+}
+
+.logo img
+{
+float: right;
+width: 100px;
+height: 120px;
+}
+
+.icon
+{
+	font-size: 20px;
+	margin: 20px auto;
+	padding: 10px;
+	height: 50px;
+	width: 50px;
+	border: 2px solid white;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.col-md-3:hover
+{
+	box-shadow: 5px 7px 40px -3px rgba(255,255,255,0.5);
+	cursor: pointer;
+
+}
+
+.col-md-3 a
+{
+	color: white;
+    text-decoration: none;
+}
+
+.col-md-3 a:hover
+{
+	color: darkorange;
+    text-decoration: none;
+}
+
+.col-md-3 h3
+{
+	font-size: 20px;
+}
+
+footer
+{
+	background-color: #333;
+	padding: 10px;
+	font-size: 12px;
+
+}
