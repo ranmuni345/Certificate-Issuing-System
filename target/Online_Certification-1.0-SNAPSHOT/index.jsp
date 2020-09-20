@@ -27,6 +27,7 @@
         <li><a href="aboutus.jsp">About us</a></li>
         <li><a href="help.jsp">Help</a></li>
         <li><a href="login.jsp">Login</a></li>
+        <li><a href="feedback.jsp">Feedback</a></li>
         
     </ul>
   </div>
