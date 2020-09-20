@@ -24,27 +24,28 @@
 		<div class="wrapper">
 			<div class="inner">
 				<img src="CSS/register/images/image-1.png" alt="" class="image-1">
-				<form action="">
+				<form action="RegistrationServlet" method="post">
 					<h3>New Account?</h3>
 					<div class="form-holder">
 						<span class="lnr lnr-user"></span>
-						<input type="text" class="form-control" placeholder="Username">
+						<input type="text" class="form-control" placeholder="Username" name="Uname">
 					</div>
 					<div class="form-holder">
 						<span class="lnr lnr-phone-handset"></span>
-						<input type="text" class="form-control" placeholder="Phone Number">
+						<input type="text" class="form-control" placeholder="Phone Number" name="Phno">
 					</div>
 					<div class="form-holder">
 						<span class="lnr lnr-envelope"></span>
-						<input type="text" class="form-control" placeholder="Mail">
+						<input type="text" class="form-control" placeholder="Mail" name="Mail">
 					</div>
 					<div class="form-holder">
 						<span class="lnr lnr-lock"></span>
-						<input type="password" class="form-control" placeholder="Password">
+						<input type="password" class="form-control" placeholder="Password" name="pw">
 					</div>
 					<div class="form-holder">
 						<span class="lnr lnr-lock"></span>
 						<input type="password" class="form-control" placeholder="Confirm Password">
+                                                <input type="hidden" value="1" name="Approval">
 					</div>
 					<button>
 						<span>Register</span>
