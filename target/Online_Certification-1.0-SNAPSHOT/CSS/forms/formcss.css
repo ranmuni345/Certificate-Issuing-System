@@ -1,0 +1,39 @@
+body 
+ {
+  background-color: #EFEFEF;
+ }
+
+h1
+{
+background-image:url("../../img/forms/Header.jpg");
+background-repeat:repeat-x;
+text-shadow:1px 1px 2px #0000000;
+font-size:40px;
+font-family:arial;
+}
+
+img 
+{
+border-radius:40%
+}
+
+.button1
+{
+border-radius:10px;
+ background-color: #3333cc;
+ padding: 15px;
+}
+
+.button2
+{
+ border-radius:10px;
+ background-color: #3333cc;
+ padding: 15px;
+}
+
+.button3
+{
+ border-radius:10px;
+ background-color: #3333cc;
+ padding: 15px;
+}
