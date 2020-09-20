@@ -61,6 +61,10 @@
 							</button>
 						</div>
 					</div>
+                                    <br><div class="text-center">
+                                         <a href="index.jsp" class="txt1">
+							Go to Home
+                                    </a>
 				</form>
 			</div>
 		</div>

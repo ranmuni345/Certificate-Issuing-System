@@ -49,7 +49,13 @@
 					<button>
 						<span>Register</span>
 					</button>
+                                        <br><div class="text-center">
+                                         <a href="index.jsp" class="txt1">
+							Go to Home
+                                    </a>
+                                        
 				</form>
+                                
 				<img src="CSS/register/images/image-2.png" alt="" class="image-2">
 			</div>
 			
