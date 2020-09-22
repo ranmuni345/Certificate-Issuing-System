@@ -42,14 +42,6 @@ public class login {
         this.password = password;
     }
     
-    public boolean adminValidation(login bean) {
-    if (bean.getEmail().equals("admin@admin.com") && bean.getPassword().equals("admin")) {
-        return true;
-    } else {
-        return false;
-        }
-    }
-    
     public boolean loginValidation(){
         
         LoginDAO dao = new LoginDAO();
