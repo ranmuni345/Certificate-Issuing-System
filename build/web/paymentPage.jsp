@@ -124,7 +124,7 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container">
-        <form action="paymentServlet" method="post">
+        <form action="PaymentServlet" method="post">
       
         <div class="row">
           <div class="col-50">

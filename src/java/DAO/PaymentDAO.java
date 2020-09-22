@@ -23,7 +23,7 @@ public class PaymentDAO {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(url, username, password);
             Statement st = conn.createStatement();
-            String quary  = "INSERT INTO users (firstname,email,address,city,state,zip,cardname,cardnumber,expmonth,expyear,cvv) VALUES ('" + Firstname + "','" + Email + "','" + Address + "','" + City + "','" + State + "','" + Zip + "','" + Cardname + "','" + Cardnumber + "','" + Expmonth + "','" + Expyear + "','" + Cvv + "')";
+            String quary  = "INSERT INTO payment (firstname,email,address,city,state,zip,cardname,cardnumber,expmonth,expyear,cvv) VALUES ('" + Firstname + "','" + Email + "','" + Address + "','" + City + "','" + State + "','" + Zip + "','" + Cardname + "','" + Cardnumber + "','" + Expmonth + "','" + Expyear + "','" + Cvv + "')";
             st.executeUpdate(quary);
     }
 
