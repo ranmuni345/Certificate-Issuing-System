@@ -20,6 +20,10 @@
         <servlet-name>LogoutServlet</servlet-name>
         <servlet-class>Controller.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Marraige_cert_servlet</servlet-name>
+        <servlet-class>Controller.Marriage_cert_servlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
         <url-pattern>/RegistrationServlet</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Marraige_cert_servlet</servlet-name>
+        <url-pattern>/Marraige_cert_servlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -21,7 +21,7 @@
 <p>User : <%= session.getAttribute("user_logged") %></p>
 <h4>Please read all instructions before completing all items.</h4><br>
 
-<form name="marrige cert" method="post" action="Marriage Certificate Connection.php">
+<form name="marrige cert" method="post" action="Marriage_cert_servlet.java">
 
 <table>
 

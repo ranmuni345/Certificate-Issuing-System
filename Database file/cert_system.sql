@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 21, 2020 at 10:57 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.7
+-- Generation Time: Sep 22, 2020 at 10:00 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,6 +44,27 @@ INSERT INTO `feedbacks` (`ID`, `name`, `email`, `message`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `marriage_cert`
+--
+
+CREATE TABLE `marriage_cert` (
+  `name` varchar(30) NOT NULL,
+  `address` varchar(30) NOT NULL,
+  `marraige_type` varchar(10) NOT NULL,
+  `no_of_copies` int(11) NOT NULL,
+  `m_fullname` varchar(30) NOT NULL,
+  `f_fullname` varchar(30) NOT NULL,
+  `certifier` varchar(30) NOT NULL,
+  `id_no` varchar(10) NOT NULL,
+  `district` varchar(10) NOT NULL,
+  `date` date NOT NULL,
+  `exact_date` date NOT NULL,
+  `email` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -61,7 +82,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID`, `Uname`, `Phone`, `Mail`, `Pword`, `Approval`) VALUES
-(4, 'sandun', '0761111111', 'test@mail.com', 'qwerty', 1);
+(4, 'sandun', '0761111111', 'test@mail.com', 'qwerty', 1),
+(5, 'test', '123456', 'test@gmail.com', '1234', 1);
 
 --
 -- Indexes for dumped tables
@@ -72,6 +94,12 @@ INSERT INTO `users` (`ID`, `Uname`, `Phone`, `Mail`, `Pword`, `Approval`) VALUES
 --
 ALTER TABLE `feedbacks`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `marriage_cert`
+--
+ALTER TABLE `marriage_cert`
+  ADD PRIMARY KEY (`id_no`);
 
 --
 -- Indexes for table `users`
@@ -95,7 +123,7 @@ ALTER TABLE `feedbacks`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
