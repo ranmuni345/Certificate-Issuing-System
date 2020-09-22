@@ -1,24 +1,25 @@
 <%-- 
-    Document   : Marriage certificate
-    Created on : Sep 19, 2020, 9:00:29 PM
-    Author     : DELL
+    Document   : Marraige_cert_form
+    Created on : Sep 22, 2020, 10:25:25 AM
+    Author     : dulan
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
- 
-<link rel="stylesheet" type="text/css" href="../CSS/forms/formcss.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+       <link rel="stylesheet" type="text/css" href="../CSS/forms/formcss.css">
 
 </head>
 <body>
-    <%@include file="form_logged_header.jsp" %>
-    
 <h1>
   <img src="../img/forms/Gov_Logo.jpg" width=150 height=100>Original copy For Marriage certificate</h1>
 
-<p>User : <%= session.getAttribute("user_logged") %></p>
+
 <h4>Please read all instructions before completing all items.</h4><br>
 
 <form name="marrige cert" method="post" action="Marriage Certificate Connection.php">
@@ -111,6 +112,5 @@ function undisableTxt() {
 </script>
 
 </form>
-
-</body>
+    </body>
 </html>

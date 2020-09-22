@@ -13,10 +13,12 @@
 
 </head>
 <body>
+    <%@include file="form_logged_header.jsp" %>
+    
 <h1>
   <img src="../img/forms/Gov_Logo.jpg" width=150 height=100>Original copy For Marriage certificate</h1>
 
-
+<p>User : <%= session.getAttribute("user_logged") %></p>
 <h4>Please read all instructions before completing all items.</h4><br>
 
 <form name="marrige cert" method="post" action="Marriage Certificate Connection.php">
