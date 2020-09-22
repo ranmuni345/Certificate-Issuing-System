@@ -87,8 +87,6 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = request.getSession(true);
                 session.setAttribute("user_logged", email);
                 response.sendRedirect("main.jsp");
-                /*RequestDispatcher rd = request.getRequestDispatcher("logged/customer.jsp");
-                rd.forward(request, response); */
         }else{
                 response.sendRedirect("login.jsp");
         }
