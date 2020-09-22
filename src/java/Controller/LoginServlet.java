@@ -81,9 +81,17 @@ public class LoginServlet extends HttpServlet {
         bean.setPassword(pass);
         
         
-      
+      //Admin check 
+        boolean status = bean.adminValidation(bean);
+        
+        if (status) {
+            HttpSession session = request.getSession(true);
+            session.setAttribute("admin_logged", email);
+            response.sendRedirect("admin.jsp");
+        }
+        //Admin check-end
                 
-        if(bean.loginValidation()){
+        else if(bean.loginValidation()){
                 HttpSession session = request.getSession(true);
                 session.setAttribute("user_logged", email);
                 response.sendRedirect("main.jsp");
