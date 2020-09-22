@@ -93,7 +93,7 @@ th {
 <h4>Please read all instructions before completing all items.</h4><br>
 
 
-<form name="timber permit" action="viewForm.jsp">  
+<form name="timberpermit" action="../TimberCutServlet" method="post">  
 
 <table style="width:100%">
 
@@ -118,11 +118,11 @@ th {
 
 <tr>
 	<td rowspan="2">5. Telephone No</td>
-	<td>i) Mobile No   <input type="tel1" name="telephone2"></td>
+	<td>i) Mobile No   <input type="text" name="tel1"></td>
 </tr>
 <tr>
 	
-	<td>ii) Home No   <input type="tel2" name="telephone"></td>
+	<td>ii) Home No   <input type="text" name="tel2"></td>
 </tr>
 
 <tr>                                         
