@@ -21,7 +21,7 @@
 <p>User : <%= session.getAttribute("user_logged") %></p>
 <h4>Please read all instructions before completing all items.</h4><br>
 
-<form name="marrige cert" method="post" action="Marriage Certificate Connection.php">
+<form name="marriage cert" method="post" action="../MarriageServlet">
 
 <table>
 
@@ -32,7 +32,7 @@ placeholder="Enter Applicant Name" required></td>
         <td> Address of Applicant</td><td><textarea name="address" id="02" size=70 required></textarea></td>
 </tr>
 <tr>
-	<td>Whether the application refers to a General or Kandyan Marrige</td><td>
+	<td>Whether the application refers to a General or Kandyan Marriage</td><td>
 <input type="text" name="generalkm" id="03" size=70 placeholder="Enter Applicant Name" required ></td>
 <td>No.of Copies required</td><td><input type="number" name="numofcopy" id="04" required></td>
 </tr>
@@ -44,7 +44,7 @@ placeholder="Enter name of the male " required ></td>
 placeholder="Enter name of the female" required ></td>
 </tr>
 <tr>
-	<td>If marrige was soiemnized by a clergyman name and situation of church</td><td><textarea name="church" id="07" size=70 required></textarea></td>
+	<td>If marriage was soiemnized by a clergyman name and situation of church</td><td><textarea name="church" id="07" size=70 required></textarea></td>
 	<td>ID No </td><td><input type="text" name="idnum" id="08" required></td>
 </tr>
 <tr>

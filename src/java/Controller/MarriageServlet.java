@@ -7,19 +7,17 @@ package Controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 /**
  *
- * @author hansikas
+ * @author dulan
  */
-public class TimberCutServlet extends HttpServlet {
+public class MarriageServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,10 +36,10 @@ public class TimberCutServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet TimberCutServlet</title>");            
+            out.println("<title>Servlet MarriageServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet TimberCutServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet MarriageServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -75,53 +73,50 @@ public class TimberCutServlet extends HttpServlet {
             throws ServletException, IOException {
         //processRequest(request, response);
         
-        String Comment1 = request.getParameter("comment1");
-        String Comment2 = request.getParameter("comment2");
-        String Comment3 = request.getParameter("comment3");
-        String Id = request.getParameter("id");
-        String Tel1 = request.getParameter("tel1");
-        String Tel2 = request.getParameter("tel2");
-        String Comment4 = request.getParameter("comment4");
-        String Comment5 = request.getParameter("comment5");
-        String Comment6 = request.getParameter("comment6");
-        String Comment7 = request.getParameter("comment7");
-        String Comment8 = request.getParameter("comment8");
-        String Comment9 = request.getParameter("comment9");
-        String Comment10 = request.getParameter("comment10");
-        String T = request.getParameter("t");
+        String Name = request.getParameter("appliname");
+        String Address = request.getParameter("address");
+        String Marriage_type = request.getParameter("generalkm");
+        String No_of_copies = request.getParameter("numofcopy");
+        String M_fullname = request.getParameter("malename");
+        String F_fullname = request.getParameter("femalename");
+        String Certifier = request.getParameter("church");
+        String Id_no = request.getParameter("idnum");
+        String District = request.getParameter("district");
+        String Date = request.getParameter("dateofmarry");
+        String Exact_date = request.getParameter("period");
+        String Email = request.getParameter("email");
         
-        
-        if(Comment1.equals("")||Comment2.equals("")||Comment3.equals("")||Id.equals("")||Tel1.equals("")||Tel2.equals("")||Comment4.equals("")||Comment5.equals("")||Comment6.equals("")||Comment7.equals("")||Comment8.equals("")||Comment9.equals("")||Comment10.equals("")||T.equals("")){
+        if(Name.equals("")||Address.equals("")||Marriage_type.equals("")||No_of_copies.equals("")||M_fullname.equals("")||F_fullname.equals("")||Certifier.equals("")||Id_no.equals("")||District.equals("")||Date.equals("")||Exact_date.equals("")||Email.equals("")){
         
             RequestDispatcher dispatcher=request.getRequestDispatcher("paymentFailed.jsp");
             dispatcher.forward(request, response);
             
         }else{
             
-            Beans.TimberPermit u3 = new Beans.TimberPermit();
+           
+            Beans.Marriage u4 = new Beans.Marriage();
             
             PrintWriter out = response.getWriter();
-            DAO.timberCutDAO rb3 = new DAO.timberCutDAO();
+            DAO.MarriageDAO rb4 = new DAO.MarriageDAO();
         
                 try {
-                    rb3.input(Comment1,Comment2,Comment3,Id,Tel1,Tel2,Comment4,Comment5,Comment6,Comment7,Comment8,Comment9,Comment10,T);
-                    u3.setComment1(Comment1);
-                    u3.setComment2(Comment2);
-                    u3.setComment3(Comment3);
-                    u3.setId(Id);
-                    u3.setTel1(Tel1);
-                    u3.setTel2(Tel2);
-                    u3.setComment4(Comment4);
-                    u3.setComment5(Comment5);
-                    u3.setComment6(Comment6);
-                    u3.setComment7(Comment7);
-                    u3.setComment8(Comment8);
-                    u3.setComment9(Comment9);
-                    u3.setComment10(Comment10);
-                    u3.setT(T);
+                    rb4.input(Name,Address,Marriage_type,No_of_copies,M_fullname,F_fullname,Certifier,Id_no,District,Date,Exact_date,Email);
+                    u4.setName(Name);
+                    u4.setAddress(Address);
+                    u4.setMarriage_type(Marriage_type);
+                    u4.setNo_of_copies(No_of_copies);
+                    u4.setM_fullname(M_fullname);
+                    u4.setF_fullname(F_fullname);
+                    u4.setCertifier(Certifier);
+                    u4.setId_no(Id_no);
+                    u4.setDistrict(District);
+                    u4.setDate(Date);
+                    u4.setExact_date(Exact_date);
+                    u4.setEmail(Email);
+                    
                     
 
-                    request.setAttribute("Payment", u3);
+                    request.setAttribute("Payment", u4);
 
                     RequestDispatcher dispatcher=request.getRequestDispatcher("paymentPage.jsp");
                     dispatcher.forward(request, response);
@@ -133,6 +128,9 @@ public class TimberCutServlet extends HttpServlet {
     
     }
 
+        
+    
+
     /**
      * Returns a short description of the servlet.
      *
@@ -142,5 +140,4 @@ public class TimberCutServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }
