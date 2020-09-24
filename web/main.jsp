@@ -109,7 +109,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="#" target="_blank" class="hex-content">
+                                        <a href="forms/formDeath.jsp" target="_blank" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa fa-braille"></i>

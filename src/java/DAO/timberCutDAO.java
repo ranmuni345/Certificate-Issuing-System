@@ -27,6 +27,10 @@ public class timberCutDAO {
             st.executeUpdate(quary);
     }
 
+    public void input(String Comment1, String Comment2, String Comment3, String Comment4, String Comment5, String Comment6, String Comment7, String Comment8, String Comment9, String Comment10, String Comment11, String Comment12) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
    
     
     
