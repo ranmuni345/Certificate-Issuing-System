@@ -29,8 +29,8 @@
         <servlet-class>Controller.TimberCutServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>DeathServlet</servlet-name>
-        <servlet-class>Controller.DeathServlet</servlet-class>
+        <servlet-name>MarriageServlet</servlet-name>
+        <servlet-class>Controller.MarriageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegistrationServlet</servlet-name>
@@ -61,8 +61,8 @@
         <url-pattern>/TimberCutServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>DeathServlet</servlet-name>
-        <url-pattern>/DeathServlet</url-pattern>
+        <servlet-name>MarriageServlet</servlet-name>
+        <url-pattern>/MarriageServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
