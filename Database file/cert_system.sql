@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2020 at 06:31 PM
--- Server version: 10.1.13-MariaDB
--- PHP Version: 5.6.23
+-- Generation Time: Sep 24, 2020 at 07:57 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 5.6.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `cert_system`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `death`
+--
+
+CREATE TABLE `death` (
+  `Comment1` varchar(200) NOT NULL,
+  `Comment2` varchar(200) NOT NULL,
+  `Comment3` varchar(200) NOT NULL,
+  `Comment4` varchar(200) NOT NULL,
+  `Comment5` varchar(200) NOT NULL,
+  `Comment6` varchar(200) NOT NULL,
+  `Comment7` varchar(200) NOT NULL,
+  `Comment8` varchar(200) NOT NULL,
+  `Comment9` varchar(200) NOT NULL,
+  `Comment10` varchar(200) NOT NULL,
+  `Comment11` varchar(200) NOT NULL,
+  `Comment12` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `death`
+--
+
+INSERT INTO `death` (`Comment1`, `Comment2`, `Comment3`, `Comment4`, `Comment5`, `Comment6`, `Comment7`, `Comment8`, `Comment9`, `Comment10`, `Comment11`, `Comment12`) VALUES
+('Name1', 'bvh', '2019-12-23', 'cghcfh', 'cghc', 'gcgh', 'vhvcj', 'vhvvhj', 'vhjvj', '2324', '23', 'dhcgn'),
+('janani yashodara gamage', 'janani yashodara gamage', '2020-01-17', 'gfh', 'janani yashodara gamage', 'janani yashodara gamage', 'kghk', 'test', 'test', '313', '1', 'tryuuyht'),
+('janani yashodara gamage', 'janani yashodara gamage', '2020-01-17', 'gfh', 'janani yashodara gamage', 'janani yashodara gamage', 'kghk', 'test', 'test', '313', '1', 'tryuuyht'),
+('janani yashodara gamage', 'janani yashodara gamage', '2020-01-17', 'gfh', 'janani yashodara gamage', 'janani yashodara gamage', 'kghk', 'test', 'test', '313', '1', 'tryuuyht');
 
 -- --------------------------------------------------------
 
@@ -159,16 +192,20 @@ ALTER TABLE `users`
 --
 ALTER TABLE `feedbacks`
   MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
 --
 -- AUTO_INCREMENT for table `permittimbercut`
 --
 ALTER TABLE `permittimbercut`
   MODIFY `RequestID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
